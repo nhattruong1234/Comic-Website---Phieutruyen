@@ -1,0 +1,283 @@
+/*Day la doan header*/
+body {
+    min-width: 750px;
+    height: 100%;
+}
+
+#top-bar {
+    top: 0;
+    padding: 5px 0;
+    height: 65px;
+    width: 100%;
+    background-color: #5680E9;
+    z-index: 100;
+    position: fixed;
+}
+
+#top-bar-left {
+    height: 55px;
+    width: 800px;
+}
+
+.top-bar-right {
+    height: 55px;
+    width: 250px;
+}
+
+#top-bar-left, .top-bar-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    position: inherit;
+    height: inherit;
+    width: auto;
+    top: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#top-bar-left .logo img {
+    height: inherit;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+
+.search-bar {
+    display: flex;
+    position: inherit;
+    max-width: 500px;
+    width: 100%;
+    height: inherit;
+    margin-left: 10px;
+    top: 0;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 0 52px 0 30px;
+    background-clip: padding-box;
+    border: none;
+}
+
+.search-bar .search-button {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: 10px;
+    bottom: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.top-bar-right button {
+    height: 80%;
+    width: 100px;
+    padding: 0 10px;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 0 rgb(0, 0, 0 , 0.25);
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+    font-size: 16px;
+    font-style: normal;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.top-bar-right #login-button {
+    background-color: lightsalmon;
+}
+
+.top-bar-right #register-button {
+    margin-right: 25px;
+    background-color: palegreen;
+}
+
+#search-result-small-list {
+    position: absolute;
+    top: 60px;
+    overflow: auto;
+    width: inherit;
+    height: 300px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0 , 0.25);
+}
+
+/*Da dang nhap*/
+#da-dang-nhap {
+    max-width: 150px;
+}
+
+.top-bar-right #notification-button button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    padding: 0;
+}
+
+.top-bar-right #notification-button i {
+    font-size: 1em;
+}
+
+.top-bar-right #account-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.top-bar-right #account-button img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#account-setting-list {
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    text-align: center;
+    background-color: #A6DFFF;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 10px 20px;
+    width: max-content;
+    height: fit-content;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0 , 0.25);
+}
+
+#account-setting-list a {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+#notification-list {
+    background-color: #E0B9FF;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0 , 0.25);
+    visibility: hidden;
+}
+
+#notification-list #option-bar {
+    display: flex;
+    position: absolute;
+    background-color: #C173FF;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+}
+
+#notification-list #option-bar button {
+    padding: 0 10px;
+    margin-left: 0;
+    height: 30px;
+    width: fit-content;
+}
+
+#notification-list #option-bar button p {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 1em;
+}
+
+#notification-list #notification-list-content {
+    position: relative;
+    margin-top: 50px;
+    height: 240px;
+    padding-left: 10px;
+    list-style: none;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+#notification-list-content .notification-box {
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height: fit-content;
+    box-shadow: 0 0 5px 0 rgb(0, 0, 0 , 0.2);
+}
+
+#notification-list-content .notification-box p {
+    color: black;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+/*Ngoai le*/
+
+.caption h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.caption {
+    width: 100% !important;
+    height: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem !important;
+    font-weight: bolder;
+}
+
+.delete-button {
+    width: 30px !important;
+    height: 30px;
+    background-color: tomato;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+}
+
+.delete-button > i {
+    color: black;
+    align-self: center;
+    font-size: 1.5em;
+    position: relative;
+    top: -5px;
+}
+
+#content {
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    border-radius: 10px;
+    margin-top: 70px;
+}

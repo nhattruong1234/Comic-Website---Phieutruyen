@@ -1,0 +1,23 @@
+/* Thân trang */
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+    font-family: 'Dosis', sans-serif;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #fbf0ff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+}
+
+body.dark{
+    transition: 0.5s ease-in-out;
+    background: #252525e5;
+    color: #ffffff;
+}
+/*  */

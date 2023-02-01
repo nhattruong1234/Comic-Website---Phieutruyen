@@ -1,0 +1,256 @@
+/* Thân trang */
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #fbf0ff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+}
+
+body.dark{
+    transition: 0.5s ease-in-out;
+    background: #252525e5;
+    color: #ffffff;
+}
+/*  */
+
+/*Ngoai le*/
+
+a, button, input {
+    outline: 0;
+    font-family: 'Roboto', serif;
+}
+
+.caption h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*  */
+
+
+/*Day la khu vuc banner*/
+.banner {
+    background-color: initial;
+    display: flex;
+    position: absolute;
+    height: 440px;
+    min-width: 750px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0;
+    max-width: 20% !important;
+    position: relative;
+    transition: 2s;
+}
+
+.banner img {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    min-width: 250px;
+    margin: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-info {
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.banner-info-title {
+    word-break: break-all;
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.banner-info-category {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.banner-info-detail {
+    font-size: 18px;
+    height: fit-content;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.banner-info-detail:not(:last-child) {
+    display: block;
+    height: 28px !important;
+}
+
+.banner-info-category .category {
+    padding: 0 20px;
+    margin: 5px 5px;
+    font-size: 18px;
+}
+
+.change-banner-button {
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    background-color: initial;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    font-size: 60px;
+    color: inherit;
+}
+
+#banner-top {
+    position: relative;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0 , 0.2);
+    border-radius: 10px;
+    margin-top: 70px;
+    height: 440px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: initial;
+}
+
+.slider {
+    width: 100%;
+    height: 440px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    height: 440px;
+    width: 500%;
+}
+
+.slides input {
+    display: none;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 100%;
+    margin-top: -18px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    box-sizing: border-box;
+    height: 14px;
+    width: 14px;
+    border: 2px solid #5680E9;
+    padding: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #5680E9;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+
+.auto-navigation {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 422px;
+}
+
+.auto-navigation div {
+    box-sizing: border-box;
+    height: 10px;
+    width: 10px;
+    border: 2px solid #5680E9;
+    border-radius: 10px;
+    transition: 1s;
+    padding: 5px;
+}
+
+.auto-navigation div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .auto-navigation .auto-btn1 {
+    margin-left: 0;
+    background: #5680E9;
+}
+
+#radio2:checked ~ .auto-navigation .auto-btn2 {
+    margin-left: 0;
+    background: #5680E9;
+}
+
+#radio3:checked ~ .auto-navigation .auto-btn3 {
+    margin-left: 0;
+    background: #5680E9;
+}
+
+#radio4:checked ~ .auto-navigation .auto-btn4 {
+    margin-left: 0;
+    background: #5680E9;
+}
+
+#radio5:checked ~ .auto-navigation .auto-btn5 {
+    margin-left: 0;
+    background: #5680E9;
+}
+
+/*story list*/
+#contentTC {
+    background-color: inherit;
+    position: relative;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0 , 0.3);
+    border-radius: 10px;
+}

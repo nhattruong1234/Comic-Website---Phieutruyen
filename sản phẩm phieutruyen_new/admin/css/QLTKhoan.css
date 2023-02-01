@@ -1,0 +1,172 @@
+/* Thân trang */
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #fbf0ff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+}
+
+body.dark{
+    transition: 0.5s ease-in-out;
+    background: #252525e5;
+    color: #ffffff;
+}
+
+/*  */
+
+.accountListbtn{
+    width: 250px;
+    height: 40px;
+    background: #b4a5ff;
+    border-radius: 5px;
+    display: block;
+    border: none;
+    font-weight: bold;
+    color: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+#search-block{
+    margin-bottom: 5px;
+    display: flex;
+}
+#search-account{
+    width: 300px;
+    height: 40px;
+    display: block;
+    border: 1px solid gainsboro;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+}
+
+#SXaccount {
+    width: fit-content;
+}
+
+#SXaccountLabel {
+    margin-left: 10px;
+}
+
+.search-btn{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    align-items: center;
+}
+
+.workspace{
+    position: relative;
+    margin: auto;
+    padding: unset;
+}
+
+#listaccountLabel {
+    position: absolute;
+    display: grid;
+    margin-top: 0;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    padding-right: 30px;
+    z-index: 10;
+    background: #5AB9EA;
+}
+
+#listaccountLabel p {
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    padding: unset;
+}
+
+.listaccount {
+    display: block;
+    margin: auto;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+    border-radius: 5px;
+    background: white;
+}
+
+.listaccount > ul {
+    margin-top: 30px;
+    overflow: auto;
+    height: 93%;
+}
+
+.listaccount li{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0 5px 0 5px;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    color: #000000;
+    background: #ebebebc0;
+    border-radius: 5px;
+}
+
+.listaccount li p{
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    margin-left: 10px;
+}
+
+.listaccount li .editaccount {
+    grid-column: 5;
+}
+
+.listaccount li .editaccount,
+.listaccount li .delaccount{
+    height: 25px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    padding:0 5px 0 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.listaccount li .editaccount{
+    background: #b4a5ff;
+    width: 160px;
+    margin-left: 10px;
+}
+
+.listaccount li .delaccount{
+    background: #ffa5a5;
+    width: 120px !important;
+    margin-left: 10px;
+}
+
+.listaccount li .delete-button {
+    top: 0;
+    right: 20px;
+}
+
+.site_footer {
+    bottom: -100px !important;
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+:root{
+    --bg1: #5680E9;
+    --bg2: #84CEEB;
+    --bg3: #5AB9EA;
+    --bg4: #C1C8E4;
+    --bg5: #8860D0;
+    --bg6: #B4A5FF;
+}
+
+*{
+    font-family: "Dosis", sans-serif;
+}
+
+body
+{
+    background: linear-gradient(to bottom right, var(--bg5), var(--bg1));
+    min-width: 750px;
+}
+
+.contain{
+    display: grid; 
+    grid-template-rows: 25% 75%;
+    bottom: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+form{
+    margin-top: 80px;
+    border-radius: 10px;  
+    margin: auto;
+    width: 400px;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.form-control{
+    height: 35px;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: none;
+}
+.input1{
+    font-size: 1.2rem;
+    color: white;
+    background: blueviolet;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.input1:hover{
+    transition: all 0.5s ease-in-out;
+    background: var(--bg3);
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.ConfirmCode{
+    display: flex;
+    width: 400px;
+    margin: 0 0;
+}
+.ConfirmCode>input{
+    border-bottom-right-radius: unset;
+    border-top-right-radius: unset;
+}
+
+.ConfirmCode .CofirmCodeBtn{
+    margin: 0 0;
+    height: 35px;
+    width: 35px;
+    background: #C1C8E4;
+    margin: 20px 0;
+    border-radius: 5px;
+    border-bottom-left-radius: unset;
+    border-top-left-radius: unset;
+}
+
+.CofirmCodeBtn>i{
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+}
+
+.CofirmCodeBtn:hover{
+    transition: 0.5s ease-in-out;
+    background: blueviolet;
+    color: #ffffff;
+}
+
+.contain a{
+    text-decoration: none;
+    color: #2b4fbb;
+}
+
+.contain a:hover, .contain a:active, .contain a:focus{
+    transition: 0.3s ease-in-out;
+    color: blueviolet;
+}
+
+.logo{
+    display: block;
+    align-items: center;
+    height: 100px;
+    width: 400px;
+}
+
+.logo>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+h2, p{
+    cursor: default;
+}

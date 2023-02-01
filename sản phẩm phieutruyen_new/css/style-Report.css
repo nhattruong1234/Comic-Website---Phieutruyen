@@ -1,0 +1,63 @@
+/* Thân trang */
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #fbf0ff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+}
+
+body.dark{
+    transition: 0.5s ease-in-out;
+    background: #252525e5;
+    color: #ffffff;
+}
+
+/*  */
+
+.form-content{
+    height: fit-content;
+    width: 100%;
+    background: #5abaea75;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 5px 5px;
+}
+
+.form-content form label{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-left: 5px;
+}
+
+.form-content form textarea{
+    max-height: 350px;
+    min-height: 200px;
+}
+
+.form-content form button{
+    margin: 10px auto;
+    width: 150px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+.form-content form button:hover{
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    background: #8860D0;
+}
+
+.form-content>form{
+    width: 95%;
+    margin: auto;
+}

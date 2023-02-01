@@ -1,0 +1,189 @@
+/* Thân trang */
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+}
+
+:root{
+    --bg1: #5680E9;
+    --bg2: #84CEEB;
+    --bg3: #5AB9EA;
+    --bg4: #C1C8E4;
+    --bg5: #8860D0;
+    --bg6: #B4A5FF;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #fbf0ff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+}
+
+body.dark{
+    transition: 0.5s ease-in-out;
+    background: #252525e5;
+    color: #ffffff;
+}
+/*  */
+
+/*Day la khu vuc banner*/
+.banner {
+    background-color: initial;
+    display: flex;
+    position: absolute;
+    height: 440px;
+    min-width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0;
+    position: relative;
+    transition: 2s;
+    background: #5ab9ea50;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    min-width: 250px;
+    margin: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-info {
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.banner-info-title {
+    word-break: break-all;
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.banner-info-category {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.banner-info-detail {
+    font-size: 18px;
+    height: fit-content;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.banner-info-detail:not(:last-child) {
+    display: block;
+    height: 28px !important;
+}
+
+.banner-info-category .category {
+    padding: 0 20px;
+    margin: 5px 5px;
+    font-size: 18px;
+}
+
+.workspace{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 550px;
+    width: 100%;
+    min-width: 80%;
+    margin: 10px auto;
+    margin: auto;
+    width: 100%;
+    padding: 10px 20px;
+    background: #cc75e77e;
+    order: 1;
+    border-radius: 5px;
+}
+
+ul{
+    list-style: none;
+    padding: unset;
+}
+
+.listchapter{
+    display: block;
+    margin: auto;
+    align-items: center;
+    height: 85%;
+    width: 100%;
+    border-radius: 5px;
+    background: #fbf0ff;
+    overflow: auto;
+}
+
+.listchapter li{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0 5px 0 5px;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    color: #000000;
+    background: #ebebebc0;
+    border-radius: 5px;
+}
+
+.listchapter li p,
+.listchapter li a{
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    margin-left: 10px;
+}
+
+.listchapter li a{
+    text-decoration: none;
+    color: #000000;
+}
+.date-upload{
+    margin-right: 10px;
+}
+
+.list-btn-contain{
+    display: flex;
+    width: 100%;
+    height: 40px;
+}
+.list-btn{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    background-color: #b84cd3;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: inherit;
+    z-index: 99;
+    margin: 0 10px;
+}
+
+.list-btn:hover{
+    transition: all 0.3s ease-in-out;
+    color: #8860D0;
+    font-weight: bold;
+    background-color: #C1C8E4;
+}
+#comment-area{
+    background-color: #C1C8E450;
+}

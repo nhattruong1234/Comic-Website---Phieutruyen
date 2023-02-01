@@ -1,0 +1,201 @@
+/* Thân trang */
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #fbf0ff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+}
+
+body.dark{
+    transition: 0.5s ease-in-out;
+    background: #252525e5;
+    color: #ffffff;
+}
+
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 80%;
+    margin: 10px auto;
+}
+
+.tabs input[type="radio"]{
+    display: none;
+}
+
+.tabs input + label{
+    padding: 20px;
+    background: #7476ff54;
+    font-weight: bold;
+    order: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.tabs .tab{
+    width: 100%;
+    padding: 20px;
+    background: #cc75e77e;
+    order: 1;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    --bs-gutter-x: 0;
+}
+
+.tabs .tab label{
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.tabs .tab h2{
+    font-size: 1.2rem;
+}
+
+.tabs input[type="radio"]:checked + label + .tab{
+    display: flex;
+}
+
+.tabs input[type="radio"]:checked + label{
+    background: #cc75e77e;
+}
+
+/* Bìa truyện */
+.tabs .tab h2{
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+/*  */
+
+.tabs .tab .workspace{
+    position: relative;
+    margin: 5px auto;
+    padding: unset;
+}
+
+.tabs .tab .listchapter{
+    display: block;
+    margin: 5px auto;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.tabs .tab ul{
+    list-style: none;
+    padding: unset;
+}
+
+/*  */
+.story-block-item{
+    display: flex;
+    height: 220px;
+    width: 100%;
+    background: #5abaea75;
+    border-radius: 5px;
+    margin: 5px auto;
+}
+
+.story-block-item>img{
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.story-block-item .checkbox-item{
+    justify-self: auto;
+    text-align: end;
+    margin-top: 10px;
+}
+
+.story-block-item .story-block-item-detail{
+    padding: 10px 5px;
+    line-height: 35px;
+    height: 70%;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.story-block-item .story-block-item-detail>h3{
+    font-weight: bold;
+}
+
+.story-block-item .story-block-item-btn{
+    height: 30%;
+}
+
+.story-block-item .story-item-btn,
+.cmd-btn .story-item-btn{
+    display: inline-flex;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    background-color: #b84cd3;
+    color: inherit;
+    z-index: 99;
+    margin: 0 5px;
+}
+
+.cmd-btn{
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+}
+
+.cmd-btn .story-item-btn{
+    background-color: #B4A5FF;
+    margin  : 0 5px;
+}
+
+.story-item-btn i{
+    background-color: inherit;
+    align-self: center;
+    margin: 0 5px;
+}
+
+.story-item-btn p{
+    align-self: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.story-item-btn:hover{
+    transition: all 0.3s ease;
+    color: blueviolet;
+    background-color: #fbf0ff;
+}
+
+.story-item-btn:hover i{
+    transition: all 0.3s ease;
+    background-color: #fbf0ff;
+}
+
+.categories label {
+    background-color: initial !important;
+    padding: 0 !important;
+}

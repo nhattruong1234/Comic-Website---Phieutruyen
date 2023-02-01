@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="vi" class>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Đọc truyện tranh Manga, Manhua, Manhwa, Comic online hay và cập nhật thường xuyên tại PhieuTruyen.Com">
+    <meta property="og:site_name" content="PhieuTruyen.Com">
+    <meta name="Author" content="PhieuTruyen.Com">
+    <meta name="keyword" content="doc truyen tranh, manga, manhua, manhwa, comic">
+    <title>Đọc truyện tranh Manga, Manhua, Manhwa, Comic Online</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/topbar.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/breadcrumb.css">
+    <link rel="stylesheet" type="text/css" href="css/pagination.css">
+    <link rel="stylesheet" type="text/css" href="css/QLTruyen.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <!--header-->
+    <header id="top-bar">
+        <div class="container-xxl d-flex justify-content-between position-relative">
+            <div id="top-bar-left">
+                <a class="logo" href="">
+                    <img src="/img/image.png" alt="logo">
+                </a>
+                <div class="search-bar">
+                    <input type="text" placeholder="Nhập tên truyện" id="search-name">
+                    <button class="search-button align-content-center" type="submit">
+                        <i class="bi bi-search align-middle" style="font-size: 20px;"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="top-bar-right" id="chua-dang-nhap"  style="display: none;">
+                <button id="login-button">Đăng nhập</button>
+                <button id="register-button">Đăng ký</button>
+            </div>
+            <!--Da dang nhap-->
+            <div class="top-bar-right" id="da-dang-nhap">
+                <div id="notification-button">
+                    <button onclick="open_list('notification-list'), close_list('account-setting-list')">
+                        <i class="bi bi-bell"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                        style="font-family: inherit; font-size: 0.75em;"> 8
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+                    <div id="notification-list">
+                        <div id="option-bar">
+                            <button>
+                                <i class="bi bi-check-circle"></i>
+                                <p>Đánh dấu đã đọc</p>
+                            </button>
+                            <button onclick="turn_on_off_notifi('noti-btn-i', 'noti-btn-text')">
+                                <i class="bi bi-bell-fill" id="noti-btn-i"></i>
+                                <p id="noti-btn-text">Tắt thông báo</p>
+                            </button>
+                        </div>
+                        <ul id="notification-list-content">
+                            <li class="notification-box" id="notification-0">
+                                <a href="#">Trường vừa trả lời bình luận của bạn
+                                    <span class="badge bg-warning text-dark">Mới</span>
+                                </a>
+                                <p><i class="bi bi-clock"></i> dd:mm</p>
+                            </li>
+                            <li class="notification-box" id="notification-1">
+                                <a href="#">Việt đang spam bình luận của bạn
+                                    <span class="badge bg-warning text-dark">Mới</span>
+                                </a>
+                                <p><i class="bi bi-clock"></i> hh:mm DD:MM:YYYY</p>
+                            </li>
+                            <li class="notification-box" id="notification-2">
+                                <a href="#">Việt đang spam bình luận của bạn
+                                    <span class="badge bg-warning text-dark">Mới</span>
+                                </a>
+                                <p><i class="bi bi-clock"></i> dd:mm</p>
+                            </li>
+                            <li class="notification-box" id="notification-3">
+                                <a href="#">Việt đang spam bình luận của bạn
+                                    <span class="badge bg-warning text-dark">Mới</span>
+                                </a>
+                                <p><i class="bi bi-clock"></i> dd:mm</p>
+                            </li>
+                            <li class="notification-box" id="notification-4">
+                                <a href="#">Việt đang spam bình luận của bạn
+                                    <span class="badge bg-warning text-dark">Mới</span>
+                                </a>
+                                <p><i class="bi bi-clock"></i> dd:mm</p>
+                            </li>
+                            <li class="notification-box" id="notification-5">
+                                <a href="#">Việt đang spam bình luận của bạn
+                                    <span class="badge bg-warning text-dark">Mới</span>
+                                </a>
+                                <p><i class="bi bi-clock"></i> dd:mm</p>
+                            </li>
+                            <li class="notification-box" id="notification-6">
+                                <a href="#">Việt đang spam bình luận của bạn
+                                    <span class="badge bg-warning text-dark">Mới</span>
+                                </a>
+                                <p><i class="bi bi-clock"></i> dd:mm</p>
+                            </li>
+                            <li class="notification-box" id="notification-7">
+                                <a href="#">Việt đang spam bình luận của bạn
+                                    <span class="badge bg-warning text-dark">Mới</span>
+                                </a>
+                                <p><i class="bi bi-clock"></i> dd:mm</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button id="account-button" onclick="open_list('account-setting-list'), close_list('notification-list')">
+                    <img src="img/logo.png">
+                </button>
+                <div id="account-setting-list">
+                    <a href="QLTTTK-AD.html">Quản lý thông tin tài khoản</a>
+                    <a href="QLTruyen-AD.html">Quản lý truyện đã đăng</a>
+                    <a href="#">Đăng xuất</a>
+                </div>
+                <script>
+                </script>
+            </div>
+        </div>
+    </header>
+
+    <!--  -->
+
+    <!-- Thanh công cụ -->
+    <div class="sidebar">
+        <div class="logo-detail" style="background-color: #B4A5FF;">
+            <i class='bx bx-menu' id="btn-menu"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="/Home-AD.html">
+                    <i class='bx bxs-home'></i>
+                    <span class="links_name">Trang chủ</span>
+                </a>
+                <span class="tooltip">Trang chủ</span>
+            </li>
+            <li>
+                <a href="/QLTKhoan.html">
+                    <i class='bx bxs-user-detail' ></i>
+                    <span class="links_name">Quản lý tài khoản người dùng</span>
+                </a>
+                <span class="tooltip">Quản lý tài khoản người dùng</span>
+            </li>
+            <li>
+                <a href="/QLTruyen-AD.html">
+                    <i class='bx bxs-book' ></i>
+                    <span class="links_name">Quản lý truyện</span>
+                </a>
+                <span class="tooltip">Quản lý truyện</span>
+            </li>
+            <li>
+                <a href="/QLDangTruyen.html">
+                    <i class='bx bx-upload' ></i>
+                    <span class="links_name">Quản lý đăng truyện</span>
+                </a>
+                <span class="tooltip">Quản lý đăng truyện</span>
+            </li>
+            <li>
+                <a href="/QLPhanHoi.html">
+                    <i class='bx bx-mail-send' ></i>
+                    <span class="links_name">Quản lý phản hồi</span>
+                </a>
+                <span class="tooltip">Quản lý phản hồi</span>
+            </li>
+            <li  id="btn-light-dark">
+                <a>
+                    <i class='bx bxs-bulb'></i>
+                    <span class="links_name">Bật/Tắt đèn</span>
+                </a>
+                <span class="tooltip">Bật/Tắt đèn</span>
+            </li>
+        </ul>
+    </div>
+
+<button class="btntop" id="btntop">
+    <i class='bx bx-send bx-rotate-270'></i>
+</button>
+  
+<div class="container-xxl" id="content">
+    <!-- Thanh breadcrumb --> 
+    <div class="contain_nav_breadvrumb">
+        <nav  class="nav_breadcrumb" aria-label="Page breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" aria-current="page"><i class='bx bxs-home'></i></li>
+                <li class="breadcrumb-item active">Quản lý truyện đã đăng</li>
+            </ol>
+        </nav>
+    </div>
+    <h1 class="caption">Quản lý truyện đã đăng</h1>
+    <!--story 1-->   
+    <div class="story-bar" id="sb-1">
+        <img src="https://cdn.statically.io/img/images8.intercomics.club/vnstory/49/af/49af43b20d8a0e3ee52ad2dc682a046e.jpg">
+        <div class="story-bar-info">
+            <div class="story-bar-info-detail">
+                <h3 style="font-weight: bold;">ONE PEACE</h3>
+                <p>Tình trạng: </p>
+                <p>Cập nhập: </p>
+                <p>Hoạt động: </p>
+                </div>
+            <div class="story-setting-option">
+                <div class="column3">
+                    <button ><a href="#"><i class="fa fa-plus-circle" style="color: black;"></i> Thêm chương</a></button>     
+                    <button ><a href="#"><i class="fa fa-list-ul" style="color: black;"></i> Quản lí chương</a></button>
+                    <button ><a href="#"><i class="fa fa-images" style="color: black;"></i> Trang truyện</a></button>
+                </div>
+            </div>
+        </div>
+        <button class="close-cmt btn btn-danger delete-button" type="button">
+            <i class="bi bi-trash"></i>
+        </button>
+    </div>
+
+    <!--story 2-->   
+    <div class="story-bar" id="sb-2">
+        <img src="http://images.vnstory.xyz/vnstory/df/a7/dfa7eee60096e585756d5fcd590383c6.jpeg">
+            <div class="story-bar-info">
+                <div class="story-bar-info-detail">
+                    <h3 style="font-weight: bold;">ONE PEACE</h3>
+                    <p>Tình trạng: </p>
+                    <p>Cập nhập: </p>
+                    <p>Hoạt động: </p>
+                </div>
+                <div class="story-setting-option">
+                    <div class="column3">
+                        <button ><a href="#"><i class="fa fa-plus-circle" style="color: black;"></i> Thêm chương</a></button>     
+                        <button ><a href="#"><i class="fa fa-list-ul" style="color: black;"></i> Quản lí chương</a></button>
+                        <button ><a href="#"><i class="fa fa-images" style="color: black;"></i> Trang truyện</a></button>
+                    </div>
+                </div>
+        </div>
+        <button class="close-cmt btn btn-danger delete-button" type="button">
+            <i class="bi bi-trash"></i>
+        </button>
+    </div>
+        
+    <!--story 3-->   
+    <div class="story-bar" id="sb-3">
+        <img src="https://nhasachquocte.com/wp-content/uploads/2019/09/9781974707010.jpg">
+            <div class="story-bar-info">
+                <div class="story-bar-info-detail">
+                    <h3 style="font-weight: bold;">ONE PEACE</h3>
+                    <p>Tình trạng: </p>
+                    <p>Cập nhập: </p>
+                    <p>Hoạt động: </p>
+                </div>
+                <div class="story-setting-option">
+                    <div class="column3">
+                        <button ><a href="#"><i class="fa fa-plus-circle" style="color: black;"></i> Thêm chương</a></button>     
+                        <button ><a href="#"><i class="fa fa-list-ul" style="color: black;"></i> Quản lí chương</a></button>
+                        <button ><a href="#"><i class="fa fa-images" style="color: black;"></i> Trang truyện</a></button>
+                    </div>
+                </div>
+        </div>
+        <button class="close-cmt btn btn-danger delete-button" type="button">
+            <i class="bi bi-trash"></i>
+        </button>
+    </div>
+    <!--story 4-->   
+    <div class="story-bar" id="sb-4">
+        <img src="https://nhasachquocte.com/wp-content/uploads/2019/09/9781974707010.jpg">
+            <div class="story-bar-info">
+                <div class="story-bar-info-detail">
+                    <h3 style="font-weight: bold;">ONE PEACE</h3>
+                    <p>Tình trạng: </p>
+                    <p>Cập nhập: </p>
+                    <p>Hoạt động: </p>
+                </div>
+                <div class="story-setting-option">
+                    <div class="column3">
+                        <button ><a href="#"><i class="fa fa-plus-circle" style="color: black;"></i> Thêm chương</a></button>     
+                        <button ><a href="#"><i class="fa fa-list-ul" style="color: black;"></i> Quản lí chương</a></button>
+                        <button ><a href="#"><i class="fa fa-images" style="color: black;"></i> Trang truyện</a></button>
+                    </div>
+                </div>
+        </div>
+        <button class="close-cmt btn btn-danger delete-button" type="button">
+            <i class="bi bi-trash"></i>
+        </button>
+    </div>
+    <!--story 5-->   
+    <a href="/DangTruyen-AD.html" class="story-bar" id="add-New-Story"><i class="fa fa-plus-circle"></i>Đăng truyện mới</a>
+    <div class="contain_nav_pagination">
+        <nav class="nav_pagination" aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link"><i class='bx bx-first-page'></i></a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Page 2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Page 2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Page 2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Page 2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Page 2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#"><i class='bx bx-last-page' ></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<footer class="site_footer">
+    <div class="Grid" >
+        <div class="Grid_row">
+         <div class="Grid_Column">
+             
+             <h5 class="footer_heading" >About Us</h5>                  
+             <ul class="footer_list">
+                 <li class="footer_item">
+                     <a href="" class="footer_item_link">Đọc truyện miễn phí</a></li>
+                 <li class="footer_item">
+                     <a href="" class="footer_item_link">Hỗ trợ cho anh em đồng bào</a></li>
+                 <li class="footer_item">
+                     <a href="" class="footer_item_link">Tạo môi trường giao lưu</a></li>
+                  <li class="footer_item">
+                         <a href="" class="footer_item_link">Báo cáo</a></li>
+                  <li class="footer_item">
+                             <a href="" class="footer_item_link">Tải App</a></li>
+             </ul>
+             </div>
+ 
+         <div class="Grid_Column">
+             <h5 class="footer_heading">Contact Us</h5>
+             <ul class="footer_list">
+                 <li class="footer_item">
+                     <a href="" class="footer_item_link">Email: Truyencuatui@example.com</a> </li>
+                  <li class="footer_item">
+                         <a href="" class="footer_item_link">Liên hệ QC</a></li>
+                 <li class="footer_item">
+                     <a a href="" class="footer_item_link">Telephone Contact</a></li>
+                 <li class="footer_item">
+                    <a href="" class="footer_item_link"> <address>
+                        Địa chỉ
+                     </address></a>
+                 </li>
+                 
+             </ul>
+         </div>
+        </div>             
+    </div>
+     <div class="footer_bottom">
+         <div class="Grid">
+      
+             <p class="footer_foot">&#169 2020 - Bản quyền thuộc về Truyencuatui</p>
+         
+         </div>
+     </div>
+ </footer>
+ <script language="javascript" src="/js/jsheader.js"></script>
+ <script language="javascript" src="/js/sidebarType1.js"></script>
+</body>
+</html>
+

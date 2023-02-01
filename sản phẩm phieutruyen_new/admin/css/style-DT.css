@@ -1,0 +1,223 @@
+/* Thân trang */
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+    font-family: 'Dosis', sans-serif;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #fbf0ff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+}
+
+body.dark{
+    transition: 0.5s ease-in-out;
+    background: #252525e5;
+    color: #ffffff;
+}
+/*  */
+
+#read-story-info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: inherit;
+    margin: 10px auto;
+    margin-top: 70px;
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0 , 0.5);
+}
+
+#read-story-info .caption {
+    align-self: center;
+    height: fit-content;
+    max-width: fit-content;
+    margin-bottom: 10px;
+}
+
+.caption > a {
+    font-family: inherit;
+    font-weight: 900;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#server-option {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#server-option a {
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 900;
+    margin: 0 20px;
+}
+
+#contentDT {
+    position: relative;
+    display: flex;
+    margin: 30px auto;
+    width: 1300px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: initial;
+    box-sizing: border-box;
+}
+
+#contentDT img {
+    max-width: 100%;
+    height: auto;
+    object-position: center;
+    object-fit: contain;
+    max-width: inherit;
+}
+
+#comment-area {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #C1C8E450;
+    margin: 50px auto;
+    width: 100%;
+    margin-bottom: 0;
+    height: max-content;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0 , 0.5);
+}
+
+.comment {
+    position: relative;
+    background-color: inherit;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0 , 0.3);
+}
+
+.comment .comment-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.comment .user-avt img {
+    height: 50px;
+    width: 50px;
+    object-position: center;
+    object-fit: cover;
+    margin-left: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.comment .user-name {
+    height: 50px;
+    padding-top: 0.4em;
+    margin-left: 20px;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.comment .comment-time {
+    height: 50px;
+    padding-top: 1em;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+.comment .comment-content {
+    background-color: inherit;
+    background-blend-mode: 100;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 1em;
+    word-wrap: break-word;
+    box-shadow: 0 0 10px rgb(0, 0, 0 , 0.1);
+}
+
+.comment .comment-reaction {
+    padding-top: 10px;
+}
+
+.comment .comment-reaction button {
+    border: none;
+    background-color: initial;
+    font-family: inherit;
+    color: inherit;
+    margin-left: 20px;
+}
+
+.comment .comment-reaction i {
+    color: inherit;
+    font-size: 1em;
+    margin: 10px;
+    font-style: normal;
+}
+
+.comment-input {
+    position: relative;
+    display: none;
+}
+
+.comment-input textarea {
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    height: 6em;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 1em;
+    resize: none;
+}
+
+.comment-input .send-cmt {
+    position: absolute;
+    font-family: inherit;
+    border: 2px solid black;
+    box-sizing: border-box;
+    background-color: inherit;
+    padding: 0 10px;
+    border-radius: 4px;
+    bottom: 15px;
+    right: 10px;
+}
+
+.comment *.comment {
+    margin-left: 10px;
+}

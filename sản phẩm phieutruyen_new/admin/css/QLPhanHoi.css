@@ -1,0 +1,221 @@
+/* Thân trang */
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #fbf0ff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+}
+
+body.dark{
+    transition: 0.5s ease-in-out;
+    background: #252525e5;
+    color: #ffffff;
+}
+
+.contentRP {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    min-height: 90%;
+    max-height: 90%;
+    background-color: unset;
+}
+
+.report-bar {
+    position: relative;
+    display: flex;
+    width: 98%;
+    height: fit-content;
+    background-color: rgba(240, 240, 240, 1);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    align-self: center;
+    box-shadow: 0 0 5px rgb(0, 0, 0 , 0.22);
+}
+
+.report-bar .user-avt {
+    justify-self: center;
+    align-self: center;
+}
+
+.report-bar .user-avt img {
+    height: 50px;
+    width: 50px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.report-bar-info{
+    max-width: 95%;
+    color: black;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    font-family: inherit;
+    margin-left: 10px;
+}
+
+.report-bar-info p {
+    margin: 5px;
+    font-size: 1em;
+    width: fit-content;
+    grid-row: 1;
+}
+
+.report-bar .report-content {
+    font-weight: bold;
+    font-size: 1.5rem;
+    grid-column: 1/4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    text-decoration: none;
+    color: black;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*  */
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.tabs input[type="radio"]{
+    display: none;
+}
+
+.tabs > input + label{
+    padding: 20px;
+    background: #7476ff54;
+    font-weight: bold;
+    order: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.tabs .tab{
+    width: 100%;
+    height: 800px;
+    padding: 20px;
+    background: #cc75e77e;
+    order: 1;
+    display: none;
+    flex-direction: column;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    --bs-gutter-x: 0;
+}
+
+.tabs .tab > label{
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tabs input[type="radio"]:checked + label + .tab{
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs input[type="radio"]:checked + label{
+    background: #cc75e77e;
+}
+
+.mark-button {
+    width: 30px !important;
+    height: 30px;
+    position: relative;
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+    margin: 0 10px;
+}
+
+.mark-button > i {
+    color: black;
+    align-self: center;
+    font-size: 1.5em;
+    position: relative;
+    top: -5px;
+}
+
+input[type="checkbox"] {
+    width: 25px !important;
+    height: 25px;
+    align-self: center;
+    position: relative;
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+}
+
+.cmd-btn .story-item-btn{
+    display: inline-flex;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    background-color: #b84cd3;
+    color: inherit;
+    z-index: 99;
+    margin: 0 5px;
+}
+
+/*btn*/
+.cmd-btn{
+    display: flex;
+    height: 50px;
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+
+.cmd-btn .story-item-btn{
+    background-color: #B4A5FF;
+    margin  : 0 5px;
+}
+
+.story-item-btn i{
+    background-color: inherit;
+    align-self: center;
+    margin: 0 5px;
+}
+
+.story-item-btn p{
+    align-self: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.story-item-btn:hover{
+    transition: all 0.3s ease;
+    color: blueviolet;
+    background-color: #fbf0ff;
+}
+
+.story-item-btn:hover i{
+    transition: all 0.3s ease;
+    background-color: #fbf0ff;
+}

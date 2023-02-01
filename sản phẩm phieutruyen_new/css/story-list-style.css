@@ -1,0 +1,163 @@
+.scaption {
+    width: 100%;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.stories-list {
+    list-style: none;
+    width: inherit;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 10px;
+}
+
+.open-list {
+    display: block;
+    margin: -10px auto;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    justify-self: center;
+}
+
+.story {
+    position: relative;
+    height: 360px;
+    width: 225px;
+    margin: 17.5px;
+    box-sizing: border-box;
+}
+
+.story-i-tag {
+    position: absolute;
+    display: flex;
+    width: inherit;
+}
+
+.story-i-tag span {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 0.8em;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0 , 0.25);
+    z-index: 50;
+}
+
+.story-i-tag button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    border: none;
+}
+
+.story img {
+    height: 300px;
+    width: 225px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0 , 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.story-title {
+    height: 20px;
+    width: fit-content;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 5px auto;
+    cursor: pointer;
+    color: inherit;
+}
+
+.story-chapter {
+    height: 20px;
+    width: fit-content;
+    margin: 5px auto;
+    cursor: pointer;
+    text-align: center;
+    color: inherit;
+}
+
+.story-chapter>a{
+    font-weight: normal;
+    font-family: inherit;
+    font-size: 1.15rem;
+}
+
+.story-info {
+    height: max-content;
+    max-height: 400px;
+    width: 350px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: 100%;
+    background-color: white;
+    color: black;
+    transform: translateX(10px);
+    visibility: visible;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgb(0, 0, 0 , 0.25);
+    z-index: 100;
+}
+
+.si-left{
+    transform: translateX(-585px) !important;
+}
+
+.story-info-title {
+    word-break: break-all;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.story-info-detail {
+    font-size: 15px;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 200px;
+}
+
+.story-info-category {
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.story-info-category .category {
+    padding: 0 10px;
+    margin: 5px 2px;
+    font-size: 15px;
+}
+
+.category {
+    font-family: 'Dosis', sans-serif;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0 , 0.1);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+}
+
+a, a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: inherit;
+}

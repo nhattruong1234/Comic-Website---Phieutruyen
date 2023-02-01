@@ -1,0 +1,73 @@
+.container-xxl>.row{
+    justify-content: space-between;
+}
+
+.detail-block{
+    display: flex;
+    border-radius: 5px;
+    margin: 10px;
+    width: 30%;
+    height: 80px;
+    padding: unset;
+}
+
+.detail-block i{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    font-size: 4rem;
+    margin: auto 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #3636362d;
+}
+
+.content-block{
+    margin: 10px;
+    line-height: 30px;
+    font-weight: bold;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    cursor: default;
+}
+
+.card{
+    display: block;
+    margin: 10px auto !important;
+    width: 100%;
+    border-radius: 5px !important;
+    color: #000000;
+}
+
+.card .body-card>h3{
+    margin: 5px 10px;
+    cursor: default;
+}
+
+.content-block p{
+    font-size: 2rem;    
+}
+
+#NumOfMember-block{
+    background-color: #5680E9;
+}
+
+#WaitingStory-block{
+    background-color: #5AB9EA;
+}
+
+#Report-block{
+    background-color: #B4A5FF;
+}
+
+.body-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    font-size: 1rem !important;
+}
+
+.canvas-content {
+    height: 100%;
+}
